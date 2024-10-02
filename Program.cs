@@ -203,7 +203,7 @@ class Lab1
 
     public bool isInRange(int a, int b, int num)
     {
-        return (a < b && num > a && b < num) || (b > a && num > b && a < num);
+        return (a < b && num > a && num < b) || (b < a && num > b && num < a);
     }
 
     public bool is2Digit(int x)
